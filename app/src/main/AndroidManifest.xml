@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kapdepress.kapdepress">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/mainlogo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/mainlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kapdepress">
+        <activity
+            android:name=".LaundaryRegularClothesRatesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LaundaryRegularDressPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LaundaryCategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".HouseHoldPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PartyWearsPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegularDressPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegularDailyTraditionalPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DailyWearPlansActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SteamIroningCategoryActivity"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".CompleteProfileotp"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".signupotpScreenActivity"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".SignupwithphoneActivity"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".PhoneLoginActivity"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".OTPScreenActivity"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/LoginScreen" />
+        <activity
+            android:name=".CompleteProfileActivity"
+            android:exported="false"
+            android:theme="@style/RegisterScreen" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

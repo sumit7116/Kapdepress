@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">KapdePress</string>
+    <string name="base_url">https://kapdepress.caprusdigi.com/api/</string>
+    <string name="banner_url">https://kapdepress.caprusdigi.com/</string>
+    <string name="login">Login</string>
+    <string name="kapdepress">KapdePress</string>
+    <string name="enter_user_code">Enter User code</string>
+    <string name="enter_password">Enter password</string>
+    <string name="forget_passowrd">Forget Password ?</string>
+    <string name="txt_login">Login</string>
+    <string name="continue_with">Or Continue With</string>
+    <string name="dont_have_an_ac">Don\'t have an account?<font color='#14279B'>SignUp</font></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_name">Enter Your Name</string>
+    <string name="enter_mob_no">Enter Your Mobile Number</string>
+    <string name="enter_alternate_mobno">Enter Your Alternate Mobile Number</string>
+    <string name="enter_email_id">Enter Your Email ID</string>
+    <string name="enter_area_pin">Enter Pin Code</string>
+    <string name="enter_refer_code">Enter Refer Code</string>
+    <string name="enter_your_pass">Enter Your Password</string>
+    <string name="retype_pass">Retype Password</string>
+    <string name="already_have_an_ac">Already have an account?<font color='#14279B'>Login</font></string>
+    <string name="signup_via_phone">Signup via Mobile Number</string>
+    <string name="enter_mobno">Enter Mobile Number</string>
+    <string name="send_otp">Send OTP</string>
+
+    <string name="dailywearsavingplan">
+        Rs. 299/-\nKurta - Rs. 7.47\nPajama - Rs. 7.47\nShirt (Regular) - Rs. 7.47\nLadies Kurta-Normal - Rs. 7.47\nKurta - Rs. 7.47\nLadies Salwar-Normal - Rs. 7.47\nLadies Blouse-Normal - Rs. 7.47\nShorts / Three Fourths - Rs. 7.47\nT-Shirt - Rs. 7.47\nLadies Top - Rs. 7.47\nCargo - Rs. 7.47\nTrousers/Pant/Jeans - Rs. 7.47\nNight Suit-Lower - Rs. 7.47\nNight Suit-Upper - Rs. 7.47\nCaps - Rs. 7.47\nHandkerchiefs - Rs. 7.47\nUnderWear/Boxers - Rs. 7.47\nVest - Rs. 7.47\nScarf / Bandana (Cotton) - Rs. 7.47
+    </string>
+
+    <string name="dailywearsmartsavingplan">
+        Rs. 649/-\nKurta - Rs. 6.49\nPajama - Rs. 6.49\nShirt (Regular) - Rs. 6.49\nLadies Kurta-Normal - Rs. 6.49\nKurta - Rs. 6.49\nLadies Salwar-Normal - Rs. 6.49\nLadies Blouse-Normal - Rs. 6.49\nShorts / Three Fourths - Rs. 6.49\nT-Shirt - Rs. 6.49\nLadies Top - Rs. 6.49\nCargo - Rs. 6.49\nTrousers/Pant/Jeans - Rs. 6.49\nNight Suit-Lower - Rs. 6.49\nNight Suit-Upper - Rs. 6.49\nCaps - Rs. 6.49\nHandkerchiefs - Rs. 6.49\nUnderWear/Boxers - Rs. 6.49\nVest - Rs. 6.49\nScarf / Bandana (Cotton) - Rs. 6.49
+    </string>
+
+    <string name="dailywearsupersavingplan">
+        Rs. 999/-\nKurta - Rs. 5.00\nPajama - Rs. 5.00\nShirt (Regular) - Rs. 5.00\nLadies Kurta-Normal - Rs. 5.00\nKurta - Rs. 5.00\nLadies Salwar-Normal - Rs. 5.00\nLadies Blouse-Normal - Rs. 5.00\nShorts / Three Fourths - Rs. 5.00\nT-Shirt - Rs. 5.00\nLadies Top - Rs. 5.00\nCargo - Rs. 5.00\nTrousers/Pant/Jeans - Rs. 5.00\nNight Suit-Lower - Rs. 5.00\nNight Suit-Upper - Rs. 5.00\nCaps - Rs. 5.00\nHandkerchiefs - Rs. 5.00\nUnderWear/Boxers - Rs. 5.00\nVest - Rs. 5.00\nScarf / Bandana (Cotton) - Rs. 5.00
+    </string>
+
+
+    <string name="otp_send">We have sent an \nOTP to +917083799738</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

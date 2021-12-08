@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "629973153413",
+    "project_id": "kapdepress-3cd02",
+    "storage_bucket": "kapdepress-3cd02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629973153413:android:6ba081631fa9b1648d9bec",
+        "android_client_info": {
+          "package_name": "com.kapdepress.kapdepress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629973153413-c3idgj9enlmsre0qpm9cdsbfq30u2t9a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kapdepress.kapdepress",
+            "certificate_hash": "6f0337e0d92267a764679f1d350b091e99cc698c"
+          }
+        },
+        {
+          "client_id": "629973153413-o49bhea4menpdk7jkivvc6bcammrn1cj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWbwJ3gW0BxrLWIZ1BWDffnlx7XSn2P1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629973153413-o49bhea4menpdk7jkivvc6bcammrn1cj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

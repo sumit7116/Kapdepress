@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/rel_mainlayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteProfileActivity">
+    <RelativeLayout
+        android:id="@+id/rel_headerImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/image2"
+        >
+
+        <TextView
+            android:id="@+id/txt_blackOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#70000000" />
+
+        <ImageView
+            android:id="@+id/img_balckOverlayLogo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/mainlogo" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_headerImage"
+        android:layout_marginBottom="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Complete Your Profile"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/img_back"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="200dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/blue"
+                app:layout_constraintStart_toEndOf="@+id/img_back"
+                app:layout_constraintTop_toBottomOf="@+id/txt_login" />
+
+            <TextView
+                android:id="@+id/txt_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <EditText
+                android:id="@+id/et_userName"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/textviewcircular"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="@string/enter_name"
+                android:paddingStart="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/blue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_Name"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/txt_mobno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:text="Mobile Number"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_userName" />
+
+            <LinearLayout
+                android:id="@+id/linear_mobno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/txt_mobno">
+
+                <EditText
+                    android:id="@+id/et_countryCode1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/textviewcircular"
+                    android:editable="false"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:paddingStart="8dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:text="+91"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/blue"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_mobno"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/textviewcircular"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:hint="@string/enter_mob_no"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/blue"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_Name" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_alternate_mobno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:text="Alternate Mobile Number"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_mobno" />
+
+            <LinearLayout
+                android:id="@+id/linear_alternate_mobno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/txt_alternate_mobno">
+
+                <EditText
+                    android:id="@+id/et_countryCode2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/textviewcircular"
+                    android:editable="false"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:paddingStart="8dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:text="+91"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/blue"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_alternate_mobno"
+                    android:layout_width="match_parent"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/textviewcircular"
+                    android:fontFamily="@font/proximanovaregular"
+                    android:hint="@string/enter_alternate_mobno"
+                    android:inputType="number"
+                    android:paddingStart="8dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@color/blue"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_Name" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_emailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:text="Email ID"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_alternate_mobno" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/textviewcircular"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="@string/enter_email_id"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/blue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_emailid" />
+
+            <TextView
+                android:id="@+id/txt_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:text="Area Pin Code"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+            <EditText
+                android:id="@+id/et_pinCode"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/textviewcircular"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="@string/enter_area_pin"
+                android:inputType="number"
+                android:paddingStart="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/blue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_pincode" />
+
+            <TextView
+                android:id="@+id/txt_refercode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:text="Refer Code"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_pinCode" />
+
+            <EditText
+                android:id="@+id/et_referCode"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/textviewcircular"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="@string/enter_refer_code"
+                android:inputType="number|text"
+                android:paddingStart="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/blue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_refercode" />
+
+            <TextView
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_referCode" />
+
+            <EditText
+                android:id="@+id/et_passowrd"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/textviewcircular"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="@string/enter_your_pass"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/blue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_password" />
+
+            <TextView
+                android:id="@+id/txt_confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/proximanovaregular"
+                android:singleLine="true"
+                android:text="Confirm Password"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_passowrd" />
+
+            <EditText
+                android:id="@+id/et_confirmPassowrd"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/textviewcircular"
+                android:fontFamily="@font/proximanovaregular"
+                android:hint="@string/retype_pass"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/blue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_confirmPassword" />
+
+            <RelativeLayout
+                android:id="@+id/rel_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_signup_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_confirmPassowrd"
+                android:gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="15dp">
+                <TextView
+                    android:id="@+id/txt_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/sign_up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/prg_signup"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true"
+                    android:indeterminateTint="@color/white"
+                    android:layout_toRightOf="@id/txt_signup"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

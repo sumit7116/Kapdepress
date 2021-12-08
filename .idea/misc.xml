@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/drawable/black_overlay.xml" value="0.240625" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/drawable/circle_shadow.xml" value="0.240625" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.240625" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.23692307692307693" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/drawable/ic_forwardarrow.xml" value="0.240625" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/drawable/ic_menu.xml" value="0.240625" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/drawable/ic_phone_black.xml" value="0.14791666666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_complete_profile.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_complete_profileotp.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_daily_wear_plans.xml" value="0.22" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_house_hold_plans.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_laundary_categories.xml" value="0.25" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_laundary_regular_clothes_rates.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_laundary_regular_dress_plans.xml" value="0.33" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_login.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_otpscreen.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_party_wears_plans.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_phone_login.xml" value="0.2" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_regular_daily_traditional_plans.xml" value="0.33" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_regular_dress_plans.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_signup_otpscreen.xml" value="0.10989583333333333" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_signup_otpscreen2.xml" value="0.10989583333333333" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_signupotp_screen.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_signupwithphone.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/activity_steam_ironing_category.xml" value="0.25" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/fragment_orders.xml" value="0.21" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/layout_authentication_msg.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/layout_mainservices.xml" value="0.5" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/layout/navigationheader.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/menu/menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Android/Internship/KapdePress/kapdepress/app/src/main/res/menu/navigationmenu.xml" value="0.22447916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
