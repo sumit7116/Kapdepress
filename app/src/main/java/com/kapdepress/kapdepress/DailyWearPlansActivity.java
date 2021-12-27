@@ -2,8 +2,10 @@ package com.kapdepress.kapdepress;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -13,6 +15,7 @@ public class DailyWearPlansActivity extends AppCompatActivity {
 private TextView txt_savingplanviewdetails,txt_smartsavingviewdetails,txt_supersavingviewdetails;
 private AlertDialog.Builder builder;
 private String savingplandata,smartsavingplandata,supersavingplandata;
+private CardView card_savingbuy,card_smartsavingbuy,card_supersavingbuy,card_regularplan;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,7 @@ private String savingplandata,smartsavingplandata,supersavingplandata;
         displaySavingplandetails();
         displaySmartsavingplandetails();
         displaySupersavingplandetails();
+        gotobuyplan();
     }
 
     private void initialization()
@@ -33,6 +37,10 @@ private String savingplandata,smartsavingplandata,supersavingplandata;
         savingplandata = getResources().getString(R.string.dailywearsavingplan);
         smartsavingplandata = getResources().getString(R.string.dailywearsmartsavingplan);
         supersavingplandata=getResources().getString(R.string.dailywearsupersavingplan);
+        card_savingbuy=findViewById(R.id.card_savingbuy);
+        card_smartsavingbuy=findViewById(R.id.card_smartsavingbuy);
+        card_supersavingbuy=findViewById(R.id.card_supersavingbuy);
+        card_regularplan=findViewById(R.id.card_regularplan);
     }
 
     private void displaySavingplandetails()
@@ -98,5 +106,53 @@ private String savingplandata,smartsavingplandata,supersavingplandata;
         });
     }
 
+private void gotobuyplan()
+{
+    card_savingbuy.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(getApplicationContext(),PlanBuyActivity.class);
+            i.putExtra("plantype","Saving Plan");
+            i.putExtra("cloths","40");
+            i.putExtra("percloth","7.47");
+            i.putExtra("total","299");
+            startActivity(i);
+        }
+    });
 
+    card_smartsavingbuy.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(getApplicationContext(),PlanBuyActivity.class);
+            i.putExtra("plantype","Smart Saving Plan");
+            i.putExtra("cloths","100");
+            i.putExtra("percloth","6.49");
+            i.putExtra("total","649");
+            startActivity(i);
+        }
+    });
+
+    card_supersavingbuy.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(getApplicationContext(),PlanBuyActivity.class);
+            i.putExtra("plantype","Super Saving Plan");
+            i.putExtra("cloths","200");
+            i.putExtra("percloth","5.00");
+            i.putExtra("total","999");
+            startActivity(i);
+        }
+    });
+    card_regularplan.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent i = new Intent(getApplicationContext(),SteamIronDailyWearClothsActivity.class);
+            i.putExtra("plantype","Super Saving Plan");
+            i.putExtra("cloths","200");
+            i.putExtra("percloth","5.00");
+            i.putExtra("total","999");
+            startActivity(i);
+        }
+    });
+}
 }

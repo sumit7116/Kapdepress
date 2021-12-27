@@ -15,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kapdepress">
         <activity
+            android:name=".SteamIronDailyWearClothsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlanBuyActivity"
+            android:exported="false" />
+        <activity
             android:name=".LaundaryRegularClothesRatesActivity"
             android:exported="false" />
         <activity
